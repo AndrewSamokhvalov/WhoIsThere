@@ -7,6 +7,7 @@
 //
 
 #import "ASTableViewController.h"
+#import "Constants.h"
 
 @interface ASTableViewController ()
 
@@ -24,9 +25,34 @@
 }
 - (void)viewDidLoad
 {
+    
+    _update = [NSTimer scheduledTimerWithTimeInterval:5.0f
+                                               target:self
+                                             selector:@selector(updateTableView:)
+                                             userInfo:nil
+                                              repeats:YES];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
+
+- (void) updateTableView:(NSTimer*) timer {
+    
+    PFQuery *query = [PFQuery queryWithClassName: GROUP_NAME];
+    NSArray *pfobjects = [query findObjects];
+    NSMutableArray *mobileId = [NSMutableArray array];
+    
+    for (PFObject *object in pfobjects) {
+        
+        [mobileId addObject: object[COLONE_NAME]];
+        
+    }
+    
+    _tableData = mobileId;
+    [self.tableView reloadData];
+    
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -53,6 +79,12 @@
     cell.textLabel.text = [_tableData objectAtIndex:indexPath.row];
     
     return cell;
+}
+
+- (void) viewDidDisappear:(BOOL)animated {
+    
+    [_update invalidate];
+    
 }
 
 @end

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B4339B47195C57FA006E5FD4 /* TCMacAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = B4339B46195C57FA006E5FD4 /* TCMacAddress.m */; };
-		B44D4694195B49610071FF50 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44D4693195B49610071FF50 /* Parse.framework */; };
 		B4C108E7195B4007005C619C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C108E6195B4007005C619C /* Foundation.framework */; };
 		B4C108E9195B4007005C619C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C108E8195B4007005C619C /* CoreGraphics.framework */; };
 		B4C108EB195B4007005C619C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C108EA195B4007005C619C /* UIKit.framework */; };
@@ -33,6 +32,7 @@
 		B4C1092F195B47B8005C619C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C1092E195B47B8005C619C /* Security.framework */; };
 		B4C10931195B47DF005C619C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C10930195B47DF005C619C /* StoreKit.framework */; };
 		B4C10933195B47EA005C619C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C10932195B47EA005C619C /* SystemConfiguration.framework */; };
+		B4DCA89E195F05F2003D7396 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4DCA89D195F05F2003D7396 /* Parse.framework */; };
 		B4EF1DCF195B55F400B01480 /* ASPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EF1DCE195B55F400B01480 /* ASPlayer.m */; };
 		B4EF1DD2195B68AE00B01480 /* ASTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EF1DD1195B68AE00B01480 /* ASTableViewController.m */; };
 		B4EF1DD9195B723B00B01480 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EF1DD8195B723B00B01480 /* Constants.m */; };
@@ -51,7 +51,6 @@
 /* Begin PBXFileReference section */
 		B4339B45195C57FA006E5FD4 /* TCMacAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCMacAddress.h; sourceTree = "<group>"; };
 		B4339B46195C57FA006E5FD4 /* TCMacAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCMacAddress.m; sourceTree = "<group>"; };
-		B44D4693195B49610071FF50 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		B4C108E3195B4007005C619C /* WhoIsThere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhoIsThere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C108E6195B4007005C619C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B4C108E8195B4007005C619C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -81,6 +80,7 @@
 		B4C1092E195B47B8005C619C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B4C10930195B47DF005C619C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		B4C10932195B47EA005C619C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B4DCA89D195F05F2003D7396 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = WhoIsThere/Parse.framework; sourceTree = "<group>"; };
 		B4EF1DCD195B55F400B01480 /* ASPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPlayer.h; sourceTree = "<group>"; };
 		B4EF1DCE195B55F400B01480 /* ASPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPlayer.m; sourceTree = "<group>"; };
 		B4EF1DD0195B68AE00B01480 /* ASTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTableViewController.h; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B44D4694195B49610071FF50 /* Parse.framework in Frameworks */,
+				B4DCA89E195F05F2003D7396 /* Parse.framework in Frameworks */,
 				B4C10933195B47EA005C619C /* SystemConfiguration.framework in Frameworks */,
 				B4C10931195B47DF005C619C /* StoreKit.framework in Frameworks */,
 				B4C1092F195B47B8005C619C /* Security.framework in Frameworks */,
@@ -145,7 +145,7 @@
 		B4C108E5195B4007005C619C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B44D4693195B49610071FF50 /* Parse.framework */,
+				B4DCA89D195F05F2003D7396 /* Parse.framework */,
 				B4C10932195B47EA005C619C /* SystemConfiguration.framework */,
 				B4C10930195B47DF005C619C /* StoreKit.framework */,
 				B4C1092E195B47B8005C619C /* Security.framework */,
@@ -457,11 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/nataladidkovskaa/Desktop/parse-library-1.2.19",
-					"/Users/nataladidkovskaa/Desktop/Рабочий\\ стол\\ Андрея/Andrey/XCode/Own\\ Applications/WhoIsThere",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WhoIsThere/WhoIsThere-Prefix.pch";
 				INFOPLIST_FILE = "WhoIsThere/WhoIsThere-Info.plist";
@@ -475,11 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/nataladidkovskaa/Desktop/parse-library-1.2.19",
-					"/Users/nataladidkovskaa/Desktop/Рабочий\\ стол\\ Андрея/Andrey/XCode/Own\\ Applications/WhoIsThere",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WhoIsThere/WhoIsThere-Prefix.pch";
 				INFOPLIST_FILE = "WhoIsThere/WhoIsThere-Info.plist";

@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
-@interface ASTableViewController :  UITableViewController <UITableViewDelegate, UITableViewDataSource>
+@interface ASTableViewController :  UITableViewController <UITableViewDelegate, UITableViewDataSource> {
+    
+    NSTimer *_update;
+}
 
 @property NSArray *tableData;
 
